@@ -6,19 +6,19 @@ import SEO from '../components/seo';
 
 // import { Container } from './styles';
 
-export default function IndexPage() {
+export default function AboutPage() {
   return (
     <Layout>
-      <SEO title="Home" />
-      <h1>Home Page</h1>
+      <SEO title="About" />
+      <h1>About Page</h1>
       <ul>
         <li>
-          <Link to="/" activeStyle={{ color: 'red' }}>
-            Home
-          </Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/about" activeStyle={{ color: 'blue' }}>
+            About
+          </Link>
         </li>
       </ul>
     </Layout>
