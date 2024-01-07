@@ -1,8 +1,6 @@
 ---
 import { SEO } from "astro-seo";
 const { title, description } = Astro.props
-const canonicalURL = `${Astro.url.protocol}//${Astro.url.host}`;
-console.log(canonicalURL)
 ---
 
 <html lang="pt-BR">
@@ -10,7 +8,6 @@ console.log(canonicalURL)
     <SEO
       title={title}
       description={description}
-      canonical={canonicalURL}
       openGraph={{
         basic: {
           title: "A Very Descriptive Title",
