@@ -1,12 +1,15 @@
 ---
 import { SEO } from "astro-seo";
 const { title, description } = Astro.props
+const url = `https://ribeiroevandro.com.br${Astro.url.pathname}`
+console.log(url)
 ---
 
 <html lang="pt-BR">
   <head>
     <SEO
       title={title}
+      canonical={url}
       description={description}
       openGraph={{
         basic: {
